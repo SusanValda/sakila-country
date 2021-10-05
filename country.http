@@ -1,0 +1,35 @@
+
+###
+GET http://localhost:8080/
+Accept: application/json
+
+###
+GET http://localhost:8080/profile
+Accept: application/json
+
+###
+GET http://localhost:8080/country
+Accept: application/json
+
+###
+GET http://localhost:8080/country/1
+Accept: application/json
+
+###
+POST http://localhost:8080/country
+Content-Type: application/json
+
+{
+    "name": "España"
+}
+
+###
+PUT http://localhost:8080/country/6
+Content-Type: application/json
+
+{
+    "name": "Estados Unidos"
+}
+
+###
+DELETE http://localhost:8080/country/4
